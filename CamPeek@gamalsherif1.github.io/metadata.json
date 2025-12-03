@@ -5,9 +5,10 @@
   "shell-version": [
     "46",
     "47",
-    "48"
+    "48",
+    "49"
   ],
   "url": "https://github.com/gamalsherif1/CamPeek",
   "uuid": "CamPeek@gamalsherif1.github.io",
-  "version": 27
+  "version": 28
 }
