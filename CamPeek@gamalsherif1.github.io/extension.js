@@ -915,7 +915,7 @@ const CamPeekIndicator = GObject.registerClass(
           "fi\n\n" +
           "# Use GStreamer for frame capture with adaptive resolution and better error handling\n" +
           "gst-launch-1.0 v4l2src device=" + this._cameraDevice + " ! \\\n" +
-          "videoconvert ! videoscale add-borders=false ! $CAMERA_CAPS,framerate=30/1 ! \\\n" +
+          "videoconvert ! videoscale add-borders=false ! $CAMERA_CAPS ! \\\n" +
           "videoscale ! video/x-raw,width=480,height=270 ! \\\n" +
           "queue max-size-buffers=2 leaky=downstream ! \\\n" +
           "videoflip method=horizontal-flip ! jpegenc quality=85 ! \\\n" +
